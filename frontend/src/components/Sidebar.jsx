@@ -35,10 +35,8 @@ const Sidebar = () => {
                                 if(!link.disabled) {
                                     setIsActive(link.name);
                                     navigate(link.link);
-                                }
-                            
+                                }                          
                             }}
-                    
                         />
                      ))}
                 </div>

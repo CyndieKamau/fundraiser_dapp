@@ -1,33 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+body { 
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family:'Epilogue', 'sans-serif';
-}
+  color: #6c706f;
 
-a {
-  color: #7dd3fc;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  color-scheme: dark;
-}
-body {
-  color: #e7e8e8;
-  background: #0f1318;
-}
+} 
 
 .linear-gradient {
   background: linear-gradient(

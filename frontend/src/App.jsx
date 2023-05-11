@@ -1,5 +1,4 @@
 import { ConnectWallet } from "@thirdweb-dev/react";
-import "./styles/globals.css";
 import React from 'react'
 import { Route, Router, Routes } from "react-router-dom";
 import {CreateProject, Home, Profile, ProjectDetails} from "./pages";
