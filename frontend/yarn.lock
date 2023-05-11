@@ -1762,7 +1762,7 @@
     react-qr-code "^2.0.11"
     tiny-invariant "^1.2.0"
 
-"@thirdweb-dev/sdk@^3.10.14", "@thirdweb-dev/sdk@^3.10.5", "@thirdweb-dev/sdk@3.10.14":
+"@thirdweb-dev/sdk@^3.10.14", "@thirdweb-dev/sdk@3.10.14":
   version "3.10.14"
   resolved "https://registry.npmjs.org/@thirdweb-dev/sdk/-/sdk-3.10.14.tgz"
   integrity sha512-FNVVI77u9OTBI99AXKapvvj8pRwYTumUekX3zi3+/rzoWqlVNNd6GW3yznckcRq3ZURH4V4YWyw61SIl54NozA==
