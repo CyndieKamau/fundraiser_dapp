@@ -4,7 +4,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 import App from "./App";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { CeloAlfajoresTestnet } from "@thirdweb-dev/chains";
-import "./styles/globals.css";
+import "./styles/index.css";
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
