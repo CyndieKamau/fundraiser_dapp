@@ -4,12 +4,14 @@ import { navlinks } from '../constants';
 import { logo, menu, search, thirdweb } from '../assets';
 import { CustomButton } from './';
 
+import { useStateContext } from '../context';
+
 
 const Navbar = () => {
     const navigate = useNavigate();
     const[isActive, setIsActive] = useState('dashboard');
     const[toggleDrawer, setToggleDrawer] = useState(false);
-    const address = '0xabcde'
+    const {connect, address} = useStateContext();
   return (
     <div className="flex md:flex-row flex-col-reverse justify-between mb-[35px] gap-6">
         <div className="lg:flex-1 flex flex-row max-w-[458px] py-2 pl-4 pr-2 h-[52px] bg-[#2f2f3b] rounded-[100px]">
@@ -27,7 +29,7 @@ const Navbar = () => {
                 styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
                 handleClick={() => {
                     if(address) navigate('Create a Project')
-                    else 'connect()'
+                    else connect()
                 }}
             />
 
@@ -42,7 +44,7 @@ const Navbar = () => {
 
         <div className="sm:hidden flex justify-between items-center relative">
             <div className="w-[40px] h-[40px] rounded-[10px] bg-[#2c2f32] flex justify-center items-center cursor-pointer">
-                <img src={thirdweb} alt='user' className="w-[60%] h-[60%] object-contain" />
+                <img src={logo} alt='user' className="w-[60%] h-[60%] object-contain" />
             </div>
 
             <img
@@ -85,7 +87,7 @@ const Navbar = () => {
                         styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
                         handleClick={() => {
                             if(address) navigate('Create a Project')
-                            else 'connect()'
+                            else connect()
                         }}
                     />
 

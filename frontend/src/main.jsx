@@ -5,6 +5,7 @@ import App from "./App";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { CeloAlfajoresTestnet } from "@thirdweb-dev/chains";
 import "./styles/index.css";
+import { StateContextProvider } from "./context";
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
@@ -15,7 +16,9 @@ root.render(
   <React.StrictMode>
     <ThirdwebProvider activeChain={CeloAlfajoresTestnet}>
       <Router>
-        <App />
+        <StateContextProvider>
+          <App />
+        </StateContextProvider>
       </Router>
     </ThirdwebProvider>
   </React.StrictMode>
