@@ -5,6 +5,7 @@ import { logo, menu, search, thirdweb } from '../assets';
 import { CustomButton } from './';
 
 import { useStateContext } from '../context';
+import { ConnectWallet } from '@thirdweb-dev/react';
 
 
 const Navbar = () => {
@@ -87,7 +88,7 @@ const Navbar = () => {
                         styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
                         handleClick={() => {
                             if(address) navigate('Create a Project')
-                            else connect()
+                            else Connect()
                         }}
                     />
 

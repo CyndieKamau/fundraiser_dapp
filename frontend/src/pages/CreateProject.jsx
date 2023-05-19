@@ -15,12 +15,12 @@ const CreateProject = () => {
   const [isLoading, setIsLoading] = useState(false);
   const {createCampaign} = useStateContext();
   const [form, setForm] = useState({
-    name:'',
+    projectOwner:'',
     projectTitle:'',
     projectDescription:'',
     projectImage:'',
     target:'',
-    deadline:''
+    projectDeadline:''
   });
 
   const handleFormFieldChange = (fieldName, e) => {
